@@ -2,33 +2,41 @@
 
 > A custom cake ordering website built for a Chittagong-based bakery brand.
 
-**Delicious Food by Arpa** is a personalized cake business that lets customers place custom cake orders via WhatsApp. The website is fully responsive, user-friendly, and built with HTML, CSS, and JavaScript — no backend needed!
+**Delicious Food by Arpa** is a personalized cake business that lets customers place custom cake orders via WhatsApp. The website is fully responsive, user-friendly, and built with **HTML, CSS, and JavaScript** — no backend needed!
+
+---
 
 ## 🌐 Live Website
 
-👉 [View Site on GitHub Pages](https://atikulislamx.github.io/Delicious-Food-By-Arpa/)
+👉 [Visit the site on GitHub Pages](https://atikulislamx.github.io/Delicious-Food-By-Arpa/)
+
+---
+
+## 📸 Demo Preview
+
+![Delicious Food by Arpa - Website Screenshot](assets/images/logo/demo.jpg)
 
 ---
 
 ## 🚀 Features
 
-- 📱 WhatsApp Order Integration
-- 🧁 Custom Cake Categories
-- 📋 Real-time Price List
-- ❓ FAQ Section
-- 🕒 Business Hours
-- 📦 Local Delivery (Chittagong City only)
+- 📱 WhatsApp-based ordering system  
+- 🧁 Custom cake categories & filtering  
+- 💰 Real-time price list with images  
+- ❓ Interactive FAQ section  
+- 🕒 Business hours and delivery info  
+- 📦 Fast delivery (Chittagong City only)
 
 ---
 
 ## 💼 Client Info
 
 - **Business Name:** Delicious Food by Arpa  
-- **City:** Chittagong, Bangladesh  
+- **Location:** Chittagong, Bangladesh  
 - **Specialty:** Custom-designed cakes  
-- **Delivery:** Fast delivery within Chittagong  
+- **Delivery Area:** Chittagong City only  
 - **Advance Payment:** ❌ Not required  
-- **Contact WhatsApp:** [+8801648630785](https://wa.me/8801648630785)
+- **WhatsApp Contact:** [+8801648630785](https://wa.me/8801648630785)
 
 ---
 
@@ -38,8 +46,16 @@
 - ✅ CSS3  
 - ✅ JavaScript  
 - ✅ Bootstrap 5  
-- ✅ Font Awesome Icons  
-- 🚀 Deployed on GitHub Pages
+- ✅ Font Awesome  
+- 🚀 GitHub Pages for deployment
+
+---
+
+## 📜 License
+
+This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+
+© 2025 Atikul Islam Rabbi. All rights reserved.
 
 ---
 

@@ -1,44 +1,51 @@
-# 🍰 Delicious Food by Arpa
+# 🎂 Delicious Food by Arpa
 
-A modern, responsive website built for **Delicious Food by Arpa** — a custom cake business based in **Chittagong City, Bangladesh**. This website allows users to browse cake options, check the price list, and place orders directly via WhatsApp.
+> A custom cake ordering website built for a Chittagong-based bakery brand.
 
-![Delicious Food by Arpa Banner](assets/images/logo/banner.png)
-
-## 🎯 About the Business
-
-**Delicious Food by Arpa** specializes in personalized cakes made with love and care, offering:
-
-- 🎂 Made-to-order cakes based on customer design
-- 📍 Delivery available only in Chittagong City
-- 🕐 Fast and reliable delivery
-- 💯 Premium ingredients, no advance payment required
+**Delicious Food by Arpa** is a personalized cake business that lets customers place custom cake orders via WhatsApp. The website is fully responsive, user-friendly, and built with HTML, CSS, and JavaScript — no backend needed!
 
 ## 🌐 Live Website
 
-🔗 **[Visit Now](https://atikulislamx.github.io/Delicious-Food-By-Arpa/)**
+👉 [View Site on GitHub Pages](https://atikulislamx.github.io/Delicious-Food-By-Arpa/)
 
-Deployed via **GitHub Pages**.
+---
 
-## 🛠 Tech Stack
+## 🚀 Features
 
-- HTML5  
-- CSS3  
-- JavaScript  
-- Bootstrap 5  
-- Font Awesome  
-- Deployed via GitHub Pages
+- 📱 WhatsApp Order Integration
+- 🧁 Custom Cake Categories
+- 📋 Real-time Price List
+- ❓ FAQ Section
+- 🕒 Business Hours
+- 📦 Local Delivery (Chittagong City only)
 
-## 📸 Features
+---
 
-- ✅ Fully responsive layout
-- ✅ Interactive menu with filters
-- ✅ WhatsApp ordering integration
-- ✅ FAQ section and price list
-- ✅ SEO optimized head content
+## 💼 Client Info
 
-## 🧾 How to Use Locally
+- **Business Name:** Delicious Food by Arpa  
+- **City:** Chittagong, Bangladesh  
+- **Specialty:** Custom-designed cakes  
+- **Delivery:** Fast delivery within Chittagong  
+- **Advance Payment:** ❌ Not required  
+- **Contact WhatsApp:** [+8801648630785](https://wa.me/8801648630785)
+
+---
+
+## 🛠️ Built With
+
+- ✅ HTML5  
+- ✅ CSS3  
+- ✅ JavaScript  
+- ✅ Bootstrap 5  
+- ✅ Font Awesome Icons  
+- 🚀 Deployed on GitHub Pages
+
+---
+
+## 📂 How to Run Locally
 
 ```bash
 git clone https://github.com/Atikulislamx/Delicious-Food-By-Arpa.git
 cd Delicious-Food-By-Arpa
-open index.html in your browser
+open index.html

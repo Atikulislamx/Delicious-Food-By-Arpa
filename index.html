@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <meta
+      name="description"
+      content="Delicious Food by A৳ a - Custom cakes made to order in Chittagong. Beautifully designed and freshly baked for your special moments."
+    />
+    <meta
+      name="keywords"
+      content="custom cakes Chittagong, designer cakes, cake delivery Chittagong, birthday cake, wedding cake, Delicious Food by A৳ a"
+    />
+    <meta name="author" content="Delicious Food by A৳ a" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <title>
+      Delicious Food by Arpa - Custom Cakes for Every Celebration in Chittagong.
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h3 onclick="window.location.href=''">
+            <i class="fa-solid fa-burger fa-bounce" style="color: #c7a17a"></i
+            >&nbsp;Delicious Food by Arpa
+          </h3>
+        </div>
+        <nav class="navigation">
+          <h3 class="pb-2 brand d-none" onclick="window.location.href=''">
+            <i class="fa-solid fa-burger fa-bounce" style="color: #c7a17a"></i
+            >&nbsp;Delicious Food by Arpa
+          </h3>
+          <li>
+            <a
+              class="active"
+              href="#"
+              id="home-nav"
+              onclick="scrollToSection(event, 'home', 'home-nav')"
+              ><i class="fa-solid fa-house"></i>&ensp;Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="product-nav"
+              onclick="scrollToSection(event, 'products', 'product-nav')"
+              ><i class="fa-solid fa-bread-slice"></i>&ensp;Our Cakes</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="service-nav"
+              onclick="scrollToSection(event, 'faq', 'service-nav')"
+              ><i class="fa-solid fa-user-gear"></i>&ensp;Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="order-nav"
+              onclick="scrollToSection(event, 'services', 'order-nav')"
+              ><i class="fa-solid fa-cart-shopping"></i>&ensp;Ordering</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              id="about-us"
+              onclick="scrollToSection(event, 'about', 'about-us')"
+              ><i class="fa-solid fa-users"></i>&ensp;About us</a
+            >
+          </li>
+        </nav>
+        <div class="bars">
+          <img
+            src="assets/images/others/menu.png"
+            alt="hamburger-menu"
+            class="bar"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="home-section" id="home">
+      <div class="home-content">
+        <h1 style="color: #edf2f7">
+          Made With Love,<br />
+          Enjoy The <br />Taste
+        </h1>
+        <p>Handcrafted with Natural & Premium Ingredients for an Authentic Taste.</p>
+        <div class="home-links">
+          <div class="first">
+            <a
+              href="#"
+              onclick="scrollToSection(event, 'products', 'product-nav')"
+              >Order Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-shop" id="products">
+      <div class="shop-links">
+        <div><h2>Our Cakes</h2></div>
+        <div class="links">
+          <li
+            class="active link-menu"
+            onclick="setActive(this)"
+            data-filter="all"
+          >
+            All
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".roti-bagel"
+            onclick="setActive(this)"
+          >
+            Cupcake
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".sandwich"
+            onclick="setActive(this)"
+          >
+            Glasscake
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".focaccia"
+            onclick="setActive(this)"
+          >
+            Classic
+          </li>
+        </div>
+      </div>
+      <div class="shop-flex consts">
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/2-lapis.png" alt="Roti Sandwich" />
+          </div>
+          <h2>Sandwich Dua Lapis</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  8.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(283)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/3-lapis.png" alt="Roti Sandwich" />
+          </div>
+          <h2>Sandwich Tiga Lapis</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  12.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+                <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/segitiga.png"
+              alt="Roti Sandwich"
+            />
+          </div>
+          <h2>Sandwich Segitiga</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  7.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(452)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/panjang.png" alt="Roti Sandwich" />
+          </div>
+          <h2>Sandwich Panjang</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  14.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(459)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/bagel-salmon.png"
+              alt="Roti Bagel"
+            />
+          </div>
+          <h2>Bagel Salmon</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  22.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/bagel-vanila.png"
+              alt="Roti Bagel"
+            />
+          </div>
+          <h2>Bagel Vanilla</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  13.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(879)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img src="assets/images/products/bagel.png" alt="Roti Bagel" />
+          </div>
+          <h2>Bagel Biji Poppy Seed</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  11.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(785)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img src="assets/images/products/bagel-2.png" alt="Roti Bagel" />
+          </div>
+          <h2>Bagel Biji Wijen</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  10.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(352)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/fokacia-salmon.png"
+              alt="Focaccia"
+            />
+          </div>
+          <h2>Focaccia Salmon</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  17.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img src="assets/images/products/fokacia.png" alt="Focaccia" />
+          </div>
+          <h2>Focaccia Daun Hijau</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  9.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(87)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img src="assets/images/products/fokacia2.png" alt="Focaccia" />
+          </div>
+                    <h2>Focaccia Olive</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  13.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(42)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/foccacia-original.png"
+              alt="Focaccia"
+            />
+          </div>
+          <h2>Focaccia Original</h2>
+          <div class="d-flex justify-content-between">
+            <article>৳  8.000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(644)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Order Now
+          </button>
+        </div>
+      </div>
+    </div>
+   <div class="bg-menu" id="menu">
+  <div class="menu-title">
+    <section>Pricelist</section>
+    <h2>Cake Menu</h2>
+    <hr />
+  </div>
+
+  <div class="menu-flex">
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/cupcake.jpg" alt="Cup Cake" />
+      </div>
+      <div><h4>Cup Cake (per piece)</h4></div>
+      <div class="line"></div>
+      <div><h4>৳60.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/miniglass.jpg" alt="Mini Glass Cake" />
+      </div>
+      <div><h4>Mini Glass Cake (per piece)</h4></div>
+      <div class="line"></div>
+      <div><h4>৳100.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/redvelvetglass.jpg" alt="Red Velvet Glass Cake" />
+      </div>
+      <div><h4>Red Velvet Glass Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳120.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/minicake.jpg" alt="Mini Cake" />
+      </div>
+      <div><h4>Mini Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳400.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/tubcake500.jpg" alt="Tub Cake 500g" />
+      </div>
+      <div><h4>Tub Cake (500 gm box)</h4></div>
+      <div class="line"></div>
+      <div><h4>৳500.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/eggless.jpg" alt="Eggless Cake" />
+      </div>
+      <div><h4>Eggless Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳650.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/set.jpg" alt="Mini Cake & Cup Cake Set" />
+      </div>
+      <div><h4>Mini Cake & Cup Cake Set</h4></div>
+      <div class="line"></div>
+      <div><h4>৳650.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/vanilla.jpg" alt="Vanilla Cake" />
+      </div>
+      <div><h4>Vanilla Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳700.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/chocolate.jpg" alt="Chocolate Cake" />
+      </div>
+      <div><h4>Chocolate Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳800.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/tubcake1000.jpg" alt="Tub Cake 1000g" />
+      </div>
+      <div><h4>Tub Cake (1000 gm box)</h4></div>
+      <div class="line"></div>
+      <div><h4>৳850.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/butterscotch.jpg" alt="Butterscotch Cake" />
+      </div>
+      <div><h4>Butterscotch Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳900.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/fruitflavor.jpg" alt="Fruit Flavored Cake" />
+      </div>
+      <div><h4>Mango / Lemon / Strawberry</h4></div>
+      <div class="line"></div>
+      <div><h4>৳900.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/chocolateoverload.jpg" alt="Chocolate Overloaded Cake" />
+      </div>
+      <div><h4>Chocolate Overloaded Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳1100.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/blackforest.jpg" alt="Black Forest Cake" />
+      </div>
+      <div><h4>Black Forest Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳1100.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/redvelvet.jpg" alt="Red Velvet Cake" />
+      </div>
+      <div><h4>Red Velvet Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳1200.00</h4></div>
+    </div>
+
+    <div class="menu1">
+      <div class="small-image">
+        <img src="assets/images/products/rasmalai.jpg" alt="Rasmalai Cake" />
+      </div>
+      <div><h4>Rasmalai Cake</h4></div>
+      <div class="line"></div>
+      <div><h4>৳1200.00</h4></div>
+    </div>
+
+  </div>
+</div>
+
+<div class="bg-about" id="services">
+  <div class="about-flex">
+
+    <!-- Order Method -->
+    <div class="about1">
+      <div>
+        <img
+          src="assets/images/others/left-footer-image.jpg"
+          alt="order-method-image"
+        />
+      </div>
+      <div class="about1-txt">
+        <h3 style="letter-spacing: 2px">How to Order</h3>
+        <div class="txt-inside">
+          <section>Via WhatsApp</section>
+          <section><a href="https://wa.me/8801648630785" target="_blank">+880 1648 630 785</a></section>
+        </div>
+        <div class="txt-inside">
+          <section>Delivery Area</section>
+          <section class="text-end">Chittagong City only</section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Operating Hours -->
+    <div class="about1">
+      <div>
+        <img
+          src="assets/images/others/right-footer-image.jpg"
+          alt="business-hours-image"
+        />
+      </div>
+      <div class="about1-txt">
+        <h3 style="letter-spacing: 2px">Business Hours</h3>
+        <div class="txt-inside">
+          <section>Every Day</section>
+          <section>09:00 AM – 09:00 PM</section>
+        </div>
+        <div class="txt-inside">
+          <section>Friday</section>
+          <section>01:00 PM – 09:00 PM</section>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="faq" id="faq" style="max-width: 90%; margin: 0 auto">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="accordion"
+    style="
+      --bs-accordion-bg: #edf2f7;
+      --bs-accordion-color: #000;
+      --bs-accordion-border-color: #c7a17a;
+      --bs-accordion-btn-color: #edf2f7;
+      --bs-accordion-active-bg: #c7a17a;
+      --bs-accordion-btn-focus-box-shadow: none;
+    "
+    id="faq-accordion"
+  >
+    
+    <!-- 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+          What types of cakes do you offer?
+        </button>
+      </h2>
+      <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          We offer a wide variety of handcrafted cakes — from elegant classic flavors to unique custom designs. All cakes are made to order based on your preferences.
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+          Can I place an order online?
+        </button>
+      </h2>
+      <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          Absolutely! You can place your order directly through our website or contact us via WhatsApp. We'll handle the rest.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+          Do I need to pay in advance?
+        </button>
+      </h2>
+      <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          No advance payment is required. You can pay upon delivery or pickup — we trust our customers!
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+          Where do you deliver?
+        </button>
+      </h2>
+      <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          We currently deliver within Chittagong City only. Our delivery service is fast, reliable, and handled with care.
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">
+          Can I request a custom cake design?
+        </button>
+      </h2>
+      <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          Of course! Just share your dream cake design — a photo, idea, or theme — and we’ll bring it to life with premium ingredients and professional finishing.
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false" aria-controls="q6">
+          How long does it take to get my cake?
+        </button>
+      </h2>
+      <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          Most orders are delivered within the same day or by your preferred time. For custom designs, we recommend ordering at least 1 day in advance.
+        </div>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7" aria-expanded="false" aria-controls="q7">
+          What if I want to send feedback or file a complaint?
+        </button>
+      </h2>
+      <div id="q7" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          We value every customer's voice. You can reach out via WhatsApp at <strong>+8801648630785</strong> or email us at <strong>a৳ acakes@gmail.com</strong>.
+        </div>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q8" aria-expanded="false" aria-controls="q8">
+          What are your operating hours?
+        </button>
+      </h2>
+      <div id="q8" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+        <div class="accordion-body">
+          We are open every day from <strong>9:00 AM to 9:00 PM</strong>. On Fridays, we open at <strong>1:00 PM</strong>. Hours may vary during national holidays.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="footer pb-3" id="about">
+      <div class="footer-flex">
+        <div class="footer-brand">
+          <div>
+            <h3
+              style="
+                font-family: 'Pushster', cursive;
+                font-weight: 700;
+                letter-spacing: 2px;
+              "
+            >
+              <i class="fa-solid fa-burger" style="color: #c7a17a"></i
+              >&nbsp;Delicious Food By A৳ a
+            </h3>
+          </div>
+          <section style="line-height: 1.45rem; margin-top: 10px">
+            A sweet place where every custom cake tells a story. At Delicious Food by A৳ a, we craft beautiful, made-to-order cakes using only premium ingredients — baked fresh and delivered across Chittagong. From elegant classics to creative designs, we bring your sweetest ideas to life.
+          </section>
+        </div>
+
+        <div class="flex-space-between" style="flex-wrap: wrap">
+          <div class="social-media">
+            <section>
+              <h3>Follow Us</h3>
+              <span
+                ><a href="https://www.facebook.com/deliciousfoodbyA৳ a"
+                  ><i class="fab fa-facebook-square"></i>&ensp;Facebook</a
+                ></span
+              >
+              <span
+                ><a href="https://instagram.com"
+                  ><i class="fab fa-instagram"></i>&ensp;Instagram</a
+                ></span
+              >
+              <span
+                ><a href="https://tiktok.com"
+                  ><i class="fab fa-tiktok"></i>&ensp;Tiktok</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="contact">
+            <section>
+              <h3>Contact With Us</h3>
+              <span
+                ><a href="https://wa.me/+8801648630785"
+                  ><i class="fab fa-whatsapp"></i>&ensp;+880 1648-630785</a
+                ></span
+              >
+              <span>
+                <a href="mailto:contact@example.com"
+                  ><i class="fa-regular fa-envelope"></i
+                  >&ensp;foodbya৳ a@gmail.com</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="outlet">
+            <section>
+              <h3>Our Addres</h3>
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Pemuda No. 25,
+                Kauman, Kec. Jepara, Kabupaten Jepara, Jawa Tengah 59417</span
+              >
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center copyright"
+        style="color: #edf2f7; margin-top: 4rem"
+      >
+        <p style="font-size: small">Copyright 2024, All Right Reserved</p>
+      </div>
+    </div>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script>
+      var mixer = mixitup(".consts");
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+  function setActive(element) {
+    const links = document.querySelectorAll(".link-menu");
+    links.forEach((link) => link.classList.remove("active"));
+    element.classList.add("active");
+  }
+
+  function getGreeting() {
+    const hour = new Date().getHours();
+    if (hour >= 4 && hour < 12) {
+      return "Good morning";
+    } else if (hour >= 12 && hour < 15) {
+      return "Good afternoon";
+    } else if (hour >= 15 && hour < 18) {
+      return "Good evening";
+    } else {
+      return "Good night";
+    }
+  }
+
+  function sendWhatsAppMessage(button) {
+    const productName = button.closest(".shop1").querySelector("h2").innerText;
+    const greeting = getGreeting();
+    const message = `${greeting}! I would like to order the cake: *${productName}*. Can you assist me?`;
+    const phoneNumber = "+8801648630785";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, "_blank");
+  }
+
+  function scrollToSection(event, sectionId, element) {
+    event.preventDefault();
+
+    const links = document.querySelectorAll("a");
+    links.forEach((link) => link.classList.remove("active"));
+
+    const activeLink = document.getElementById(element);
+    if (activeLink) {
+      activeLink.classList.add("active");
+    }
+
+    const targetElement = document.getElementById(sectionId);
+    const offset = -80;
+    const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition + offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
+</script>
+  </body>
+</html>

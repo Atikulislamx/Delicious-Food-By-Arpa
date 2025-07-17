@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/images/logo/logo.jpg" alt="Delicious Food by Arpa Logo" width="200"/>
+</p>
+
 # 🎂 Delicious Food by Arpa
 
 > A custom cake ordering website built for a Chittagong-based bakery brand.
